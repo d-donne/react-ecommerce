@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  tr:nth-child(even) {
+    @apply bg-zinc-50
+  }
+
+  th, td {
+    @apply text-center select-none;
+  }
+
+}
+
+
+
+@layer utilities {
+  .container {
+    @apply flex px-[5%];
+  }
+
+  .max-container {
+    @apply flex max-w-[2440px];
+  }
+
+  .bg-grad {
+    @apply bg-gradient-to-b from-fuchsia-100 to-green-100 to-70%;
+  }
+
+  .input {
+    @apply border border-stone-300 text-lg text-zinc-600 px-5 py-4;
+  }
+
+  .summary-item {
+    @apply border-b-4 border-zinc-200 pb-3 flex items-center justify-between;
+  }
+}
